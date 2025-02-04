@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* General Styling */
+body {
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.facebook-icon svg {
+    width: 25px;
+    fill: #939698;
+    transition: 0.3s;
+}
+
+.facebook-icon:hover svg {
+    fill: #101820;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+.image-radius {
+    border-radius: 50px;
+}
+
+.logo {
+    max-width: 150px;
+}
+
+.hero-section {
+    background-color: #0D1319;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.hero-para {
+    text-align: left;
+    font-size: 3.1vw;
+    line-height: 1.2;
+    color: #fff;
+    position: relative;
+}
+
+.block-quote {
+    position: absolute;
+    left: -30px;
+    top: -20px;
+}
+
+.block-quote svg {
+    width: 25px;
+    fill: #3E4348;
+}
+
+.hero-section::before,
+.hero-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -10%;
+    width: 25%;
+    height: 100%;
+    transform: skewX(-15deg);
+    transform-origin: top right;
+    z-index: 0;
+}
+
+.hero-section::before {
+    background-color: #5D6165;
+}
+
+.hero-section::after {
+    background-color: #42474C;
+    right: 13%;
+    width: 10%;
+}
+
+.hero-para-col {
+    width: 39vw;
+}
+
+.btn-wrapper {
+    position: relative;
+    width: 50vw;
+}
+
+.hero-btn {
+    position: absolute;
+    right: 15%;
+    bottom: 0;
+    background: #fff;
+    color: #E1001D;
+    font-family: "Fugaz One", serif;
+    font-size: 2rem;
+    z-index: 2;
+    text-decoration: none !important;
+    border-radius: 40px;
+    padding: 0.9rem 2.5rem;
+    box-shadow: 1px 1px 2px #0000006e;
+    transition: 0.4s;
+}
+
+.hero-btn:hover {
+    background: #E1001D;
+    color: #fff;
+}
+
+.headshot-wrapper {
+    position: absolute;
+    width: 32vw;
+    bottom: 0;
+    right: 18%;
+    z-index: 1;
+}
+
+/* section 2 */
+.para2 {
+    font-size: 1.5rem;
+    line-height: 1.1;
+}
+
+/* footer */
+
+footer {
+    background-color: #F0F0F0;
+}
+
+.footer-wrapper {
+    padding: 2rem 0;
+}
+
+.footer-para {
+    color: #E1001D;
+    font-family: "Fugaz One", serif;
+    margin: 0;
+    font-size: 1.55rem;
+}
+
+.headshot-btn-wrapper {
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .hero-para {
+        font-size: 2.6vw;
+    }
+
+    .hero-btn {
+        right: 0;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .footer-para {
+        padding: 0 0.5rem;
+        text-align: center;
+    }
+
+    .hero-btn {
+        font-size: 1.5rem;
+        padding: 0.4rem 1.5rem;
+    }
+
+    .hero-para {
+        font-size: 2vw;
+    }
+
+    .block-quote svg {
+        width: 20px;
+    }
+}
+
+
+@media (max-width: 567px) {
+    header>div.justify-content-between.py-3 {
+        justify-content: center !important;
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+
+    .facebook-icon {
+        position: absolute;
+        right: 15px;
+        bottom: 15px;
+        z-index: 3;
+    }
+
+    .headshot-wrapper {
+        position: relative;
+        width: 100%;
+        right: auto;
+        bottom: auto;
+
+    }
+
+    .headshot-wrapper img {
+        margin-top: -20px;
+        z-index: 1;
+        position: sticky;
+    }
+
+    .headshot-bg {
+        overflow-x: hidden;
+        position: absolute;
+        height: 112vw;
+        width: 100%;
+        bottom: 0;
+    }
+
+    .headshot-bg::before,
+    .headshot-bg::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -30%;
+        width: 50%;
+        height: 100%;
+        transform: skewX(-15deg);
+        transform-origin: top right;
+        z-index: 0;
+    }
+
+    .headshot-bg::before {
+        background-color: #5D6165;
+    }
+
+    .headshot-bg::after {
+        background-color: #42474C;
+        right: 13%;
+        width: 90%;
+    }
+
+    .hero-section::before,
+    .hero-section::after {
+        content: none !important;
+    }
+
+    .hero-section .d-flex {
+        flex-direction: column-reverse !important;
+        padding-top: 5rem !important;
+    }
+
+    .btn-wrapper {
+        display: none;
+    }
+
+    .hero-btn {
+        font-size: 1.5rem;
+        padding: 0.4rem 1.5rem;
+        right: 50%;
+        transform: translateX(50%);
+        bottom: -25px;
+    }
+
+    .hero-para-col {
+        width: 100%;
+    }
+
+    .hero-para {
+        font-size: 2.1rem;
+        padding: 0 1rem;
+    }
+
+    .headshot-btn-wrapper {
+        display: block;
+    }
+
+    .block-quote {
+        position: absolute;
+        left: -5px;
+        top: -10vw;
+    }
+
+    .block-quote svg {
+        width: 8vw;
+    }
+
+}
