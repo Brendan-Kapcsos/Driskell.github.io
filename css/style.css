@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,700&family=Playfair+Display:wght@400..900&display=swap');
 
 /* General Styling */
 body {
-    font-family: "Old Standard TT", serif;
+    font-family: "Playfair Display", serif;
     font-weight: 400;
     font-style: normal;
     margin: 0;
@@ -96,8 +96,11 @@ img {
     bottom: 0;
     background: #fff;
     color: #E1001D;
-    font-family: "Fugaz One", serif;
-    font-size: 2rem;
+    font-family: "Barlow Condensed", serif;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 1.1;
+    font-size: 2.5rem;
     z-index: 2;
     text-decoration: none !important;
     border-radius: 40px;
@@ -121,8 +124,8 @@ img {
 
 /* section 2 */
 .para2 {
-    font-size: 1.5rem;
-    line-height: 1.1;
+    font-size: 1.43rem;
+    line-height: 1.2;
 }
 
 /* footer */
@@ -137,9 +140,11 @@ footer {
 
 .footer-para {
     color: #E1001D;
-    font-family: "Fugaz One", serif;
+    font-family: "Barlow Condensed", serif;
+    font-weight: 700;
+    font-style: italic;
     margin: 0;
-    font-size: 1.55rem;
+    font-size: 2.2rem;
 }
 
 .headshot-btn-wrapper {
@@ -165,7 +170,7 @@ footer {
     }
 
     .hero-btn {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
         padding: 0.4rem 1.5rem;
     }
 
@@ -253,7 +258,7 @@ footer {
     }
 
     .hero-btn {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
         padding: 0.4rem 1.5rem;
         right: 50%;
         transform: translateX(50%);
